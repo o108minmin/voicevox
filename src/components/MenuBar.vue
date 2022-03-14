@@ -92,7 +92,9 @@ export default defineComponent({
     const uiLocked = computed(() => store.getters.UI_LOCKED);
     const menubarLocked = computed(() => store.getters.MENUBAR_LOCKED);
     const projectName = computed(() => store.getters.PROJECT_NAME);
-    const useGpu = store.state.useGpu;
+    // const useGpu = store.state.useGpu;
+    // 実機で状態が確認できないため、ダミーコードを仕込む
+    const useGpu = true;
     const isEdited = computed(() => store.getters.IS_EDITED);
     const isFullscreen = computed(() => store.getters.IS_FULLSCREEN);
 
